@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redeem the Rose</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Screen 1 -->
+<div class="screen active" data-step="1">
+  <div class="bouquet">💐</div>
+  <h1>This rose is for you</h1>
+  <button onclick="next()">Redeem the Rose</button>
+</div>
+
+<!-- Screen 2 -->
+<div class="screen" data-step="2">
+  <h2>Wait.</h2>
+  <p>
+    Before you take it,<br>
+    answer a few questions.<br><br>
+    Not to test you.<br>
+    Just to remind us.
+  </p>
+  <button onclick="next()">Okay</button>
+</div>
+
+<!-- Question 1 -->
+<div class="screen" data-step="3">
+  <h2>Why do you think I’m giving you this rose?</h2>
+  <button onclick="wrong()">Because it’s Rose Day</button>
+  <button onclick="wrong()">Because it looks nice</button>
+  <button onclick="next()">Because you mean something to me.</button>
+</div>
+
+<!-- Question 2 -->
+<div class="screen" data-step="4">
+  <h2>Why this rose should mean different for you?</h2>
+  <button onclick="wrong()">Because i am giving it.</button>
+  <button onclick="wrong()">Because i am giving it in a different way.</button>
+  <button onclick="next()">Because you are the first person with whom i am doing these stuff. (I may regret this in the future or not, its upto you)</button>
+</div>
+
+<!-- Question 3 -->
+<div class="screen" data-step="5">
+  <h2>Will you keep arguing with me in the future as well?</h2>
+  <button onclick="wrong()">Of course, cause you enjoy it.</button>
+  <button onclick="wrong()">Arguments create memories.</button>
+  <button onclick="next()">No i won't, i will only bring peace.</button>
+</div>
+
+<!-- Question 4 -->
+<div class="screen" data-step="6">
+  <h2>Am i still not romantic enough?</h2>
+  <button onclick="wrong()">There is more scope for progress.</button>
+  <button onclick="wrong()">Absolutely perfect</button>
+  <button onclick="next()">Most Romantic Person Ever</button>
+</div>
+
+<!-- Final -->
+<div class="screen final" data-step="7">
+  <div class="bouquet bloom">💐</div>
+  <h1>Happy Rose Day ❤️</h1>
+  <p>
+    The rose was always yours.<br>
+    I just wanted to walk here with you.
+  </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
